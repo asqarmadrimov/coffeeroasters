@@ -1,0 +1,96 @@
+.intro__collection {
+  padding-top: 126px;
+  background-image:url("../../img/bagroud-img-collection.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.intro__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.intro__item {
+  max-width: 255px;
+}
+
+.intro__item + .intro__item{
+  margin-left: 30px;
+}
+
+.intro__img {
+  margin-bottom: 71px;
+  max-width: 255px;
+}
+
+.intro__title {
+  margin-bottom: 24px;
+  font-family: 'Fraunces 9pt';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+}
+
+.intro__text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+
+@media only screen and (max-width: 1070px) {
+  .intro__collection {
+    padding-top: 126px;
+    background-image:url("../../img/bagroud-img-collection.png");
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 789px 189px;
+  }
+  
+  .intro__item {
+    max-width: 205px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .intro__list {
+    display: block;
+  }
+  .intro__item + .intro__item{
+    margin-left: 0px;
+  }
+  .intro__item {
+    margin: 0;
+    max-width: 573px;
+    display: flex;
+    text-align: left;
+  }
+} 
+
+@media only screen and (max-width: 880px) {
+  .intro__collection {
+    padding-top: 126px;
+    background-image:none;
+  }
+
+  .intro__list {
+    display: block;
+  }
+  .intro__item + .intro__item{
+    margin-left: 0px;
+  }
+  .intro__item {
+    margin: 0;
+    max-width: 573px;
+    display: block;
+    text-align: center;
+  }
+  
+}
